@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e2f1d9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4caf50;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.location p {
+    font-size: 16px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar select, 
+.search-bar input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+
+.search-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+}
+
+.language-cart {
+    display: flex;
+    align-items: center;
+}
+
+.language-btn, 
+.cart-btn {
+    background-color: yellow;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.rent-section, .tools-section, .pipes-section {
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.rent-btn {
+    display: block;
+    background-color: yellow;
+    color: #000;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tractor-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.tractor-item, .tool-item, .pipe-item {
+    margin-bottom: 20px;
+}
+
+.tractor-item img, .tool-item img, .pipe-item img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    float: left;
+}
+
+.tractor-item p, .tool-item p, .pipe-item p {
+    margin-left: 120px;
+}

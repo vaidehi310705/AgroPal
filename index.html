@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style1.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <select id="language">
+        <option value="en">English</option>
+        <option value="hi">हिन्दी</option>
+        <option value="mr">मराठी</option>
+        <option value="pa">ਪੰਜਾਬੀ</option>
+        <option value="te">తెలుగు</option>
+        <option value="ta">தமிழ்</option>
+        <option value="gu">ગુજરાતી</option>
+    </select>
+    
+    <div id="mainContainer">
+        <div id="left">
+            <div id="leftOne">
+                <div id="timeDiv">
+                    <span id="time">12:00</span>
+                    <span id="ampm">PM</span>
+                    <span id="date">October 30, 2024</span>
+                </div>
+                <div id="searchContainer">
+                    <input type="text" id="city" placeholder="Enter city">
+                    <button id="Search" onclick="getWeather()">Search</button>
+                </div>
+            </div>
+
+            
+
+            <div id="map">
+                <iframe id="map1" src="https://maps.google.com/maps?q=mumbai&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"></iframe>
+            </div>
+        </div>
+
+        <div id="right">
+            <div id="rightOne">
+                <div id="loc">
+                    <i id="log" class="fas fa-map-marker-alt"></i>
+                    <p id="cityName">Mumbai</p>
+                </div>
+                <div><i class="fas fa-cloud-sun-rain"></i></div>
+                <div id="sel">
+                    <span id="tempLabel">Temperature: </span><span id="temp">29</span>&#176;C
+                </div>
+                <div id="Rightdate" class="Rightdate">Saturday, 10 March</div>
+            </div>
+
+            <div id="rightTop">
+                <div>
+                    <b id="humidityLabel">Humidity:</b> <span id="humidity">34</span>
+                </div>
+                <div>
+                    <b id="pressureLabel">Pressure:</b> <span id="pressure">1010</span>
+                </div>
+            </div>
+
+            <div id="rightTop2">
+                <div><b id="windSpeedLabel">Wind Speed:</b> <span id="wind">4.16</span></div>
+                <div><b>🌅 </b>Sun Rise: <span id="rise">6:23 am</span></div>
+                <div><b>🌄 </b>Sun Set: <span id="set">6:00 am</span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroPal</title>
+  <link rel="stylesheet" href="app.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo"></div>
+    <div class="menu-icon" id="menu-icon" aria-label="Toggle menu">&#9776;</div>
+  </header>
+
+  <nav id="sidebar" class="sidebar" role="navigation" aria-label="Main Navigation">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#equipment">Equipment</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to the Farmer's Equipment Hub</h1>
+        <p>Rent and share farming equipment locally to reduce costs and maximize efficiency.</p>
+        <button class="explore-button">Explore Equipment</button>
+      </div>
+    </section>
+
+    <section class="feature-section">
+      <h2>What would you like to do today?</h2>
+      <div class="feature-list">
+        <div class="feature-card">
+          <img src="tractor.jpg" alt="Tractor">
+          <h3>Renting/Sharing Equipment</h3>
+          <button class="rent-button"><a href="rent.html">Rent Now</a></button>
+        </div>
+        <div class="feature-card">
+          <img src="crop.jpg" alt="Crop">
+          <h3>Manage Your Crop</h3>
+          <button class="rent-button"><a href="index2.html">Manage</a></button>
+        </div>
+        <div class="feature-card">
+          <img src="weather.jpg" alt="Weather">
+          <h3>Check Weather</h3>
+          <button class="rent-button"><a href="index.html">Check</a></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <p>Contact us at: <a href="mailto:farmerhub@example.com">farmerhub@example.com</a></p>
+    <p>Empowering rural communities through shared resources!</p>
+  </footer>
+
+  <script>
+    const menuIcon = document.getElementById('menu-icon');
+    const sidebar = document.getElementById('sidebar');
+
+    menuIcon.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+      menuIcon.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

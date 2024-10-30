@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Management System</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <h1>Crop Management System</h1>
+    </header>
+    <main>
+        <section id="crop-calculator">
+            <h2>Crop Plan Calculator</h2>
+            <form id="crop-form">
+                <label for="crop-type">Select Crop:</label>
+                <select id="crop-type">
+                    <option value="tomatoes">Tomatoes</option>
+                    <option value="potatoes">Potatoes</option>
+                    <option value="corn">Corn</option>
+                    <option value="lettuce">Lettuce</option>
+                    <option value="beans">Beans</option>
+                </select>
+            
+                <br>
+                <button type="button" id="calculate-plan">Calculate Plan</button>
+            </form>
+            <div id="plan-output"></div>
+        </section>
+
+        <section id="crop-progress">
+            <h2>Crop Growth Progress</h2>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <div id="progress-text">0%</div>
+            <button id="increase-progress">Increase Growth</button>
+        </section>
+
+        <section id="fertilizer-trade">
+            <h2>Selling and Buying Fertilizers</h2>
+            <form id="fertilizer-form">
+                <label for="fertilizer-name">Fertilizer Name:</label>
+                <input type="text" id="fertilizer-name" placeholder="Enter fertilizer name">
+                <br>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" placeholder="Enter quantity">
+                <br>
+                <button type="button" id="buy-fertilizer">Buy</button>
+                <button type="button" id="sell-fertilizer">Sell</button>
+            </form>
+            <div id="trade-output"></div>
+        </section>
+
+        <section id="crop-recommendations" class="container">
+            <h2>Crop Recommendations</h2>
+            <form id="recommendation-form">
+                <div class="form-group">
+                    <label for="soil-condition">Soil Condition:</label>
+                    <select id="soil-condition" required>
+                        <option value="" disabled selected>Select soil condition</option>
+                        <option value="Loamy">Loamy</option>
+                        <option value="Clay">Clay</option>
+                        <option value="Sandy">Sandy</option>
+                        <option value="Silt">Silt</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="season">Season:</label>
+                    <select id="season" required>
+                        <option value="" disabled selected>Select season</option>
+                        <option value="Spring">Spring</option>
+                        <option value="Summer">Summer</option>
+                        <option value="Fall">Fall</option>
+                        <option value="Winter">Winter</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="land-area">Land Area (acres):</label>
+                    <input type="number" id="land-area" placeholder="Enter land area" required>
+                </div>
+                <button type="submit" class="btn">Get Recommendations</button>
+            </form>
+            <div id="recommendations-result" class="result">
+                <h3>Recommended Crops:</h3>
+                <p id="recommendations-output">Fill out the form to get crop recommendations based on your inputs.</p>
+            </div>
+        </section>
+        
+
+        <section id="management-plan">
+            <h2>Crop Management Plan</h2>
+            <p>Follow best practices for optimal growth!</p>
+            <ul>
+                <li>Regular watering based on crop needs.</li>
+                <li>Use the right fertilizers.</li>
+                <li>Monitor for pests regularly.</li>
+                <li>Harvest at the right time for best yield.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Crop Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="script2.js"></script>
+</body>
+</html>
